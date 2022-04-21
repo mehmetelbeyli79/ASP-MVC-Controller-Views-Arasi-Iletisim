@@ -24,6 +24,7 @@ namespace WebApplication1.Controllers
             TempData["AdSoyad"] = "Mehmet Elbeyli";
             TempData["check1"] = true;
 
+
             return View();
         }
     }
