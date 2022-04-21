@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HomePage</title>
+</head>
+<body>
+    <div>
+        <h2>HomePage</h2>
+    </div>
+    <div>
+        <b>Ad-Soyad : </b>@* @ViewData["AdSoyad"] *@ @*@ViewBag.AdSoyad*@ @TempData["AdSoyad"]
+        <br />
+        <b>Verinin Bool Türü:</b>@* @ViewData["check1"] *@ @*@ViewBag.check1*@ @TempData["check1"]
+    </div>
+</body>
+</html>
