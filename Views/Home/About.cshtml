@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>About</title>
+</head>
+<body>
+    <div>
+        <h2>About Page</h2>
+    </div>
+    <hr />
+    <div>
+        @* HTML helperlar ile view'e controller'den verilerimizi çekebiliriz. *@
+        <b>Ad : </b>@Html.TextBox("Ad") @* id ve name'e Ad atayacak ve value kısmına Viewbagdengelen değeri koyacaktır *@
+        <br />
+        <b>Durum : </b>@Html.CheckBox("Durum")<br />
+        <b>Liste : </b>@Html.DropDownList("List1")
+    </div>
+
+    <div>
+        @* Normal Html elemanları içinde de Viewbagler çalışacaktır. *@
+        Normal HTML İçinde Kullanımı:<input type="type" name="name" value="@ViewBag.Ad" />
+    </div>
+    <div>
+        @Html.ActionLink("Contact Page", "Contact")
+    </div>
+
+</body>
+</html>
